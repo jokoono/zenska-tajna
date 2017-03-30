@@ -19,6 +19,36 @@
     .header-bottom .order{
         margin: -8px auto;
     }
+    .navbar-collapse {
+        padding-right: 0px;
+        padding-left: 0px;
+        position: relative;
+        
+    }
+    .dropdown,
+    .nav>li{
+        position: static;
+    }
+    .dropdown:hover  .dropdown-menu{
+        display: block !important;
+    }
+    .dropdown-menu {
+    position: absolute;
+    left:0;
+    top: 100%;
+    width: 100%; 
+}
+.left-corner{
+    position: absolute;
+    bottom: -3px;
+    left:0;
+}
+.right-corner{
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+}
+
 
 }
 
@@ -39,20 +69,5 @@
     .header-bottom .order img {
         margin-left: 7px;
     }
-.cd-primary-nav {
-    position: static;
-    padding: 0;
-    height: 40px;
-    width: auto;
-    float: none;
-    overflow: visible;
-    background-image: url('style-img/nav-bcgr.png');
-    background-size: cover;
-    background-position: center -9px;
-    background-repeat: no-repeat;
-    background-color: #fff;
-}
-.cd-primary-nav > li > a {
-    padding: 0 45px;
-}
+
 }

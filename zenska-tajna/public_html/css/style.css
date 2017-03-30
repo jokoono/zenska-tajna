@@ -64,3 +64,30 @@ header ul li a{
 .header-bottom .order a{
     color:#c10497;
 }
+/*---- navigation style-------*/
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+    background-image: url('style-img/nav-bcgr.png') ;
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: center center;
+    background-color: #fff;
+    border-left: 1px solid #313131;
+    border-right: 1px solid #313131;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+
+.dropdown-menu {
+    position: relative;
+    left:0;
+    top: 0;
+    float: none;
+}
