@@ -1,3 +1,6 @@
+/* 
+font-family: 'Raleway', sans-serif;
+*/
 body{
     background-position: center center;
     background-repeat: no-repeat;
@@ -84,10 +87,94 @@ header ul li a{
     color: #fff;
 }
 
-
 .dropdown-menu {
     position: relative;
     left:0;
     top: 0;
     float: none;
 }
+
+
+
+/*-----  iskopiraj ovde kod od kuce!!!!!!! ------*/
+
+.core-slider_control-nav {
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    bottom: 0px;
+    left: 0;
+    text-align: left;
+    background-color: transparent;
+    height: 75px;
+    background-image: url(style-img/shara.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #e6e6e6;
+}
+.core-slider_control-nav-item {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 7.5px 5px;
+    cursor: pointer;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+    border-radius: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+.core-slider_control-nav-item:first-of-type{
+    background-image:url(style-img/ring.jpg);
+}
+.core-slider_control-nav-item:nth-of-type(2){
+    background-image:url(style-img/buterfly.jpg);
+}
+.core-slider_control-nav-item:nth-of-type(3){
+    background-image:url(style-img/earrings.jpg); 
+}
+.core-slider_control-nav-item:last-of-type{
+    background-image:url(style-img/teardrop.jpg); 
+}
+.trans-color{
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    left: 0;
+    background-color: #ededed;
+    height: 75px;
+    opacity: .7;
+}
+.product-price h3{
+    color:#db8cc4;
+    font-family: 'Raleway', sans-serif;
+    font-weight:100;
+    font-size: 35px;
+    
+}
+.product-price p{
+    color:#333;
+    font-family: 'Raleway', sans-serif;
+    font-weight:100;
+    font-size: 35px;
+}
+.product-price .btn{
+    background:#d004a3;
+    width:85px;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color:#d204a4;
+    font-size: 16px;
+        
+}
+.product-price .btn .fa{
+    font-weight: bold;
+}
+#acessories .product{
+    padding: 15px 0;
+}
+
+
