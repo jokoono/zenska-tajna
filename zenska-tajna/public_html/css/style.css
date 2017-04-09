@@ -21,7 +21,7 @@ header ul li a{
 }
 .header-bottom .logo{
     position: relative;
-    top: 4px;
+    top: 5px;
     left: -5px;
 }
 .header-bottom .input-group .form-control{
@@ -68,7 +68,9 @@ header ul li a{
     color:#c10497;
 }
 /*---- navigation style-------*/
-
+.navbar{
+    margin-bottom: 0;
+}
 .navbar-default {
     background-color: transparent;
     border-color: transparent;
@@ -94,8 +96,6 @@ header ul li a{
     float: none;
 }
 
-
-
 /*-----  iskopiraj ovde kod od kuce!!!!!!! ------*/
 
 .core-slider_control-nav {
@@ -110,13 +110,12 @@ header ul li a{
     background-image: url(style-img/shara.png);
     background-position: center right;
     background-repeat: no-repeat;
-    border-bottom: 1px solid #e6e6e6;
 }
 .core-slider_control-nav-item {
     display: inline-block;
     width: 60px;
     height: 60px;
-    margin: 7.5px 5px;
+    margin: 7.5px 2px;
     cursor: pointer;
     -webkit-transition: all .5s linear;
     transition: all .5s linear;
@@ -124,7 +123,6 @@ header ul li a{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-
 }
 .core-slider_control-nav-item:first-of-type{
     background-image:url(style-img/ring.jpg);
@@ -147,18 +145,22 @@ header ul li a{
     height: 75px;
     opacity: .7;
 }
+.product-price{
+    margin-bottom: 90px;
+    position: relative;
+}
 .product-price h3{
     color:#db8cc4;
     font-family: 'Raleway', sans-serif;
     font-weight:100;
-    font-size: 35px;
-    
+    font-size: 19px;
+    margin-top: 0;
 }
 .product-price p{
     color:#333;
     font-family: 'Raleway', sans-serif;
     font-weight:100;
-    font-size: 35px;
+    font-size: 19px;
 }
 .product-price .btn{
     background:#d004a3;
@@ -168,13 +170,60 @@ header ul li a{
     border-radius: 10px;
     border-color:#d204a4;
     font-size: 16px;
-        
+
 }
 .product-price .btn .fa{
     font-weight: bold;
 }
+#acessories{
+    border:1px solid #e6e6e6;
+}
 #acessories .product{
     padding: 15px 0;
 }
-
+.accessories-slide {
+    position: relative;
+    padding-bottom: 70px;
+}
+.accessories-slide .owl-carousel .owl-stage-outer {
+    top: 50px;
+}
+.accessories-slide .owl-theme .owl-nav {
+    position: absolute;
+    top:0;
+    right: 0;
+    text-align: right;
+}
+.accessories-slide .pattern{
+    background-image: url(style-img/pattern.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 15px;
+    padding: 7px;
+    margin-top: 0;
+    width: 90%;
+    height: 30px;
+}
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next{
+    width:30px;
+    height: 30px;
+    line-height: 25px;
+}
+.owl-carousel .owl-nav .owl-prev:before{
+    content: url(style-img/arrow-left.png);
+   
+}
+.owl-carousel .owl-nav .owl-next:after{
+     content: url(style-img/arrow-right.png);
+  
+}
+.owl-theme .owl-nav [class*="owl-"] {
+    padding: 4px 12px;
+    background: #e5e5e5;
+    border-radius: 0;
+    margin:5px 1px;
+}
 

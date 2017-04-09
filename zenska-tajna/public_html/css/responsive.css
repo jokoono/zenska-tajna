@@ -23,7 +23,7 @@
         padding-right: 0px;
         padding-left: 0px;
         position: relative;
-        
+
     }
     .dropdown,
     .nav>li{
@@ -33,21 +33,52 @@
         display: block !important;
     }
     .dropdown-menu {
-    position: absolute;
-    left:0;
-    top: 100%;
-    width: 100%; 
-}
-.left-corner{
-    position: absolute;
-    bottom: -3px;
-    left:0;
-}
-.right-corner{
-    position: absolute;
-    bottom: -3px;
-    right: 0;
-}
+        position: absolute;
+        left:0;
+        top: 100%;
+        width: 100%;
+        background: #474747; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(#474747, #585858); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#474747, #585858); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#474747, #585858); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#474747, #585858); /* Standard syntax */
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+        width: 101%;
+        left: -4px;
+    }
+    .navbar-nav:before{
+        content: url(style-img/corner-left.png);
+        display:block;
+        position: absolute;
+        bottom:-8px;
+    }
+    .navbar-collapse:before{
+        content: url(style-img/corner-right.png);
+        display:block;
+        position: absolute;
+        bottom:-8px;
+        right: 0;
+    }
+    .core-slider_control-nav-item {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 7.5px 5px;
+    }
+    .product-price{
+        margin-bottom: 0px;
+        top:0;
+    }
+    .product-price h3{
+        font-size: 35px;
+        margin-top: 20px;
+
+    }
+    .product-price p{
+        font-size: 35px;
+    }
+
 
 
 }
