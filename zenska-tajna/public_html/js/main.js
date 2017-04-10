@@ -101,5 +101,34 @@ $(document).ready(function () {
             }
         });
     }
+     if ($('.trends').length > 0) {
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            nav: true,
+            navText: ["",""],
+            rewindNav:true,
+            dots: false,
+           
+            responsive: {
+                0: {
+                    items: 3
+                },
+                768: {
+                    items: 3
+                },
+                992: {
+                    items: 3
+                   
+                },
+                1200: {
+                    items: 3
+                    
+                }
+            }
+        });
+    }
 
 });
