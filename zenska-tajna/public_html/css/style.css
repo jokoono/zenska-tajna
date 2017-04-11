@@ -371,13 +371,11 @@ header ul li a{
     font-weight: bold;
     height: 30px;
 }
-.auction .btn .fa{
-    font-weight: bold;
-}
 .discount{
     margin: 23px 0;
     border:1px solid #e4e4e4;
 }
+
 .discount .pattern{
     background-color: #49b6c0;
     background-image: url(style-img/pattern-pastel.png);
@@ -405,4 +403,89 @@ header ul li a{
     border-radius: 10px;
     font-size: 12px;
     font-weight: bold;
+}
+.style{
+    border:1px solid #e6e6e6;
+}
+.style div{
+    width: 44%;
+    float: left;
+}
+.style .left{
+    margin-right: 4%;
+    margin-left: 4%;
+}
+.style h6{
+    color:#c10497;
+    font-weight: bold;
+}
+.style p{
+    color:#555555;
+    font-size: 12px;
+}
+.stylist{
+    border:1px solid #e6e6e6;
+    border-top:none;
+    background-color: #f2f2f2;
+
+}
+.stylist > div{
+    border:1px solid #fff;
+    padding: 8px;
+}
+.stylist p{
+    margin-bottom: 0;
+    font-size: 12px;
+    color:#555555;
+}
+.stylist p:nth-of-type(2){
+    font-weight: bold;
+}
+.stylist p:last-of-type{
+    font-size: 11px;
+}
+.pose{
+    margin: 23px 0;
+    border:1px solid #e6e6e6;
+    padding-bottom: 7px;
+}
+.pose img{
+    margin: 5px auto;
+    padding: 0 12px;
+}
+.pose a{
+    padding-left: 12px;
+    color:#c10497;
+    font-size: 12px;
+}
+.job{
+    border:2px solid #efc7e6;
+    background: -webkit-linear-gradient(left top, #fef6fc, #f0daeb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #fef6fc, #f0daeb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #fef6fc, #f0daeb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #fef6fc, #f0daeb); /* Standard syntax */
+}
+.job img{
+    margin-top: 7px;
+}
+.job h4{
+    color:#6a275b;
+    font-weight: bold;  
+}
+.job a.btn{
+    margin: 10px 0 25px;
+    border-radius: 10px;
+    color:#fff;
+    font-weight: bold;
+    background: #d304a5; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#d304a5, #bc0493); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#d304a5, #bc0493); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#d304a5, #bc0493); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#d304a5, #bc0493); /* Standard syntax */
+    border-color: #ce04a1;
+}
+.job .agent{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
