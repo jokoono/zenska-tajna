@@ -15,15 +15,15 @@
 
     .header-bottom .input-group{
         top:12px;
+        margin: 0;
     }
     .header-bottom .order{
-        margin: -8px auto;
+        margin: -8px auto 0;
     }
     .navbar-collapse {
         padding-right: 0px;
         padding-left: 0px;
         position: relative;
-
     }
     .dropdown,
     .nav>li{
@@ -44,7 +44,7 @@
         background: linear-gradient(#474747, #585858); /* Standard syntax */
     }
     .navbar-default .navbar-collapse, .navbar-default .navbar-form{
-        width: 101%;
+        width: 101.2%;
         left: -4px;
     }
     .navbar-nav:before{
@@ -60,11 +60,14 @@
         bottom:-8px;
         right: 0;
     }
+    .navbar-nav {
+        margin: 0px;
+    }
     .core-slider_control-nav-item {
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    margin: 7.5px 5px;
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        margin: 7.5px 5px;
     }
     .product-price{
         margin-bottom: 0px;
@@ -84,7 +87,10 @@
 }
 
 @media(min-width:992px){
-    /*---- header style  -----*/
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+        width: 101%;
+        left: -4px;
+    }
 
 
 
@@ -99,6 +105,10 @@
     }
     .header-bottom .order img {
         margin-left: 7px;
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+        width: 100.9%;
+        left: -5px;
     }
 
 }
