@@ -42,7 +42,11 @@ header ul li a{
 .header-bottom .input-group .btn{
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    background: #ce04a1;
+    background: #d304a5; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#d304a5, #bc0493); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#d304a5, #bc0493); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#d304a5, #bc0493); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#d304a5, #bc0493); /* Standard syntax */
     border-color: #ce04a1;
 }
 .header-bottom .input-group .btn .fa{
@@ -130,8 +134,8 @@ header ul li a{
     color:#fff;
 }
 .dropdown .nails ul li{
-   background-image: none;
-   padding-left: 0;
+    background-image: none;
+    padding-left: 0;
 }
 .dropdown .nails ul li a{
     color:#333;
@@ -203,14 +207,17 @@ header ul li a{
     font-size: 19px;
 }
 .product-price .btn{
-    background:#d004a3;
+    background: #d304a5; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#d304a5, #bc0493); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#d304a5, #bc0493); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#d304a5, #bc0493); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#d304a5, #bc0493); /* Standard syntax */
     width:85px;
     color:#fff;
     font-weight: bold;
     border-radius: 10px;
-    border-color:#d204a4;
+    border-color: #ce04a1;
     font-size: 16px;
-
 }
 .product-price .btn .fa{
     font-weight: bold;
@@ -228,7 +235,7 @@ header ul li a{
 .accessories-slide .owl-carousel .owl-stage-outer {
     top: 50px;
 }
-.accessories-slide .owl-theme .owl-nav {
+.accessories-slide .owl-carousel .owl-nav {
     position: absolute;
     top:0;
     right: 0;
@@ -254,13 +261,13 @@ header ul li a{
 }
 .owl-carousel .owl-nav .owl-prev:before{
     content: url(style-img/arrow-left.png);
-   
+
 }
 .owl-carousel .owl-nav .owl-next:after{
-     content: url(style-img/arrow-right.png);
-  
+    content: url(style-img/arrow-right.png);
+
 }
-.owl-theme .owl-nav [class*="owl-"] {
+.owl-carousel .owl-nav [class*="owl-"] {
     padding: 4px 12px;
     background: #e5e5e5;
     border-radius: 0;
@@ -282,6 +289,120 @@ header ul li a{
 .accessories-slide p:nth-of-type(2){
     font-weight: bold;
 }
-.owl-carousel .owl-item img {
-    max-width: 160px;
+.helper h5{
+    color:#fff;
+    background-image: url(style-img/pattern.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #cdd0de;
+    padding: 7px;
+}
+.helper article{
+    height: 130px;
+    border: 1px solid #e1e1e1;
+    background: #ececec; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f8f8f8, #ececec); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f8f8f8, #ececec); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f8f8f8, #ececec); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f8f8f8, #ececec); /* Standard syntax */
+    margin-bottom: 7px;
+    float: left;
+    width:49%;
+}
+.helper article.left{
+    margin-right: 2%;
+}
+.helper article img{
+    margin: 15px auto;
+    height: 65px;
+}
+.helper article h6{
+    font-weight: bold;
+    font-size:14px;
+    color:#555555;
+}
+.people p{
+    color:#454545;
+}.auction{
+    border:1px solid #e7e5ef;
+    background-color: #e9eaf2;
+    background-image: url(style-img/shara1.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.aside .pattern{
+    background-image: url(style-img/pattern.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 10px;
+    margin-top: 0;
+    color:#fff;
+    background-color: #cdd0de;
+}
+.auction h6{
+    font-size: 14px;
+    color:#c10497;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.auction p{
+    font-size: 12px;
+    color:#555555;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.auction .btn{
+    width:135px;
+    display: block;
+    margin: 15px auto;
+    background: #d304a5; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#d304a5, #bc0493); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#d304a5, #bc0493); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#d304a5, #bc0493); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#d304a5, #bc0493); /* Standard syntax */
+    color:#fff;
+    border-color: #ce04a1;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    height: 30px;
+}
+.auction .btn .fa{
+    font-weight: bold;
+}
+.discount{
+    margin: 23px 0;
+    border:1px solid #e4e4e4;
+}
+.discount .pattern{
+    background-color: #49b6c0;
+    background-image: url(style-img/pattern-pastel.png);
+}
+.discount p{
+    color:#555555;
+    margin-bottom: 0;
+}
+.discount h5 + p{
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.discount p:nth-last-of-type(3){
+    font-weight: bold;
+}
+.discount .btn{
+    margin: 15px auto;
+    background: #d304a5; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#d304a5, #bc0493); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#d304a5, #bc0493); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#d304a5, #bc0493); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#d304a5, #bc0493); /* Standard syntax */
+    color:#fff;
+    border-color: #ce04a1;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
 }

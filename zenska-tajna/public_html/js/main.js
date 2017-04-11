@@ -71,9 +71,9 @@ $(document).ready(function () {
         });
     }
 
-      if ($('.accessories-slide').length > 0) {
+      if ($('.owl-carousel').length > 0) {
 
-        $('.owl-carousel').owlCarousel({
+        $('.products').owlCarousel({
             loop: true,
             margin: 10,
             responsiveClass: true,
@@ -85,25 +85,26 @@ $(document).ready(function () {
            
             responsive: {
                 0: {
-                    items: 3
+                    items: 1
+                },
+                480: {
+                    items: 2
                 },
                 768: {
-                    items: 4
+                    items: 3
+                   
                 },
+                
                 992: {
                     items: 4
                    
-                },
-                1200: {
-                    items: 4
-                    
                 }
             }
         });
     }
-     if ($('.trends').length > 0) {
+     
 
-        $('.owl-carousel').owlCarousel({
+        $('.trend').owlCarousel({
             loop: true,
             margin: 10,
             responsiveClass: true,
@@ -112,23 +113,47 @@ $(document).ready(function () {
             rewindNav:true,
             dots: false,
            
-            responsive: {
+        responsive: {
                 0: {
-                    items: 3
+                    items: 1
+                },
+                480: {
+                    items: 2
                 },
                 768: {
                     items: 3
-                },
-                992: {
-                    items: 3
                    
-                },
-                1200: {
-                    items: 3
-                    
                 }
+                
             }
         });
-    }
+          $('.trends').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            nav: true,
+            navText: ["",""],
+            rewindNav:true,
+            dots: false,
+           
+        responsive: {
+                0: {
+                    items: 3
+                },
+                480: {
+                    items: 4
+                },
+                768: {
+                    items: 5
+                   
+                },
+                992: {
+                    items: 6
+                   
+                }
+                
+            }
+        });
+  
 
 });
