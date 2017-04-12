@@ -10,6 +10,7 @@
         top: -30px;
     }
     .header-bottom {
+        padding: 0;
         padding-right: 10px;
     }
 
@@ -81,6 +82,30 @@
     .product-price p{
         font-size: 35px;
     }
+    .footer-top{
+        padding: 15px;
+    }
+    .footer-top ul{
+        margin-bottom: 0;
+    }
+    .footer-top ul:first-of-type{
+        float: left;
+    }
+    .footer-top ul:last-of-type{
+        float:right;
+    }
+    .footer-bottom .btn{
+        margin-top: 5px;
+    }
+    .footer-bottom article{
+        padding: 20px;
+    }
+    .footer-bottom {
+        text-align: left;
+    }
+    .footer-bottom article div:nth-child(2){
+        margin:0;
+    }
 
 
 
@@ -92,9 +117,16 @@
         left: -4px;
     }
     #acessories {
-    height: 365.5px;
-    margin-bottom: 10px;
-}
+        height: 365.5px;
+        margin-bottom: 10px;
+    }
+    .footer-bottom .btn{
+        margin-top: 0px;
+    }
+    .footer-bottom article div:nth-child(2){
+        margin:20px 10px;
+    }
+
 
 
 
