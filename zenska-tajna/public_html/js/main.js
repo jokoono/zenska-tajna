@@ -154,6 +154,40 @@ $(document).ready(function () {
                 
             }
         });
+        $('.by-products').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            nav: true,
+            navText: ["",""],
+            rewindNav:true,
+            dots: false,
+           
+        responsive: {
+                0: {
+                    items: 2
+                },
+                 390: {
+                    items: 3
+                },
+                500: {
+                    items: 4
+                },
+                600: {
+                    items: 5
+                },
+                768: {
+                    items: 4
+                },
+                992: {
+                    items: 5
+                },
+                1200: {
+                    items: 6
+                   
+                }
+            }
+        });
  
     //CALL PLUGIN FOR VIDEO GALLERY ON HOMEPAGE
     if($('#video-gallery').length>0){

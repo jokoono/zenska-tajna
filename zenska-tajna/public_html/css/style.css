@@ -163,7 +163,7 @@ header ul li a{
     display: inline-block;
     width: 60px;
     height: 60px;
-    margin: 7.5px 2px;
+    margin: 7.5px 1px;
     cursor: pointer;
     -webkit-transition: all .5s linear;
     transition: all .5s linear;
@@ -257,41 +257,41 @@ header ul li a{
     width: 90%;
     height: 30px;
 }
-.owl-carousel .owl-nav .owl-prev,
-.owl-carousel .owl-nav .owl-next{
+.accessories-slide .owl-carousel .owl-nav .owl-prev,
+.accessories-slide .owl-carousel .owl-nav .owl-next{
     width:30px;
     height: 30px;
     line-height: 25px;
 }
-.owl-carousel .owl-nav .owl-prev:before{
+.accessories-slide .owl-carousel .owl-nav .owl-prev:before{
     content: url(style-img/arrow-left.png);
 
 }
-.owl-carousel .owl-nav .owl-next:after{
+.accessories-slide .owl-carousel .owl-nav .owl-next:after{
     content: url(style-img/arrow-right.png);
 
 }
-.owl-carousel .owl-nav [class*="owl-"] {
+.accessories-slide .owl-carousel .owl-nav [class*="owl-"] {
     padding: 4px 12px;
     background: #e5e5e5;
     border-radius: 0;
     margin:5px 1px;
 }
-.owl-carousel .owl-item a:hover{
+.accessories-slide .owl-carousel .owl-item a:hover{
     text-decoration: none;
 }
-.owl-carousel .owl-item a figure{
+.accessories-slide .owl-carousel .owl-item a figure{
     overflow: hidden;
     border:1px solid #ededed;
 }
-.owl-carousel .owl-item a img{
+.accessories-slide .owl-carousel .owl-item a img{
     transition: 0.5s linear;
 }
-.owl-carousel .owl-item a:hover img{
+.accessories-slide .owl-carousel .owl-item a:hover img{
     transform: scale(1.1);
 }
 
-.owl-carousel .owl-item a p{
+.accessories-slide .owl-carousel .owl-item a p{
     color: #000;
 }
 
@@ -339,14 +339,24 @@ header ul li a{
 .helper article.left{
     margin-right: 2%;
 }
-.helper article img{
-    margin: 15px auto;
-    height: 65px;
+.helper article a{
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 100%;
+    background-position: center 20px;
+    background-size: 60%;
 }
-.helper article h6{
+.helper .notebook a{
+    background-image: url(../img/notebook.png);
+}
+.helper .notebook:hover a{
+    background-image: url(../img/notebook-hover.png)
+}
+.helper article a h6{
     font-weight: bold;
     font-size:14px;
     color:#555555;
+    margin-top: 90px;
 }
 
 .people h5{
@@ -648,12 +658,123 @@ footer{
 .footer-bottom article.tw div{
     float:left;
     padding: 20px 0 0;
-    
 }
-
 .footer-bottom article div:nth-child(2){
     margin:20px 10px;
 }
 .footer-bottom article div h5{
     color:#c10497;
+}
+
+/*----  proizvodi.html style ----*/
+
+.product-slide .breadcrumb{
+    display: inline-block;
+    background-color: transparent;
+    font-size: 11px;
+}
+.product-slide .by-products article{
+    height: 150px;
+    text-align: center;
+}
+.product-slide .by-products article a{
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-position: center 20px;
+     background-size: 70%;
+}
+.product-slide .by-products .all a{
+    background-image: url(slider-img/all.png);
+    background-position: center 25px;
+     background-size: 100%;
+}
+.product-slide .by-products .all:hover a{
+    background-image: url(slider-img/all-hover.png);
+    background-position: center 25px;
+     background-size: 100%;
+}
+.product-slide .by-products .purse a{
+    background-image: url(slider-img/purse.png);
+   
+   
+}
+.product-slide .by-products .purse:hover a{
+    background-image: url(slider-img/purse-hover.png);
+   
+   
+}
+.product-slide .by-products .wallet a{
+    background-image: url(slider-img/wallet.png);
+   
+    background-position: center 50px;
+}
+.product-slide .by-products .wallet:hover a{
+    background-image: url(slider-img/wallet-hover.png);
+    
+    background-position: center 50px;
+}
+.product-slide .by-products .bagpack a{
+    background-image: url(slider-img/ruksak.png);
+   
+}
+.product-slide .by-products .bagpack:hover a{
+    background-image: url(slider-img/ruksak-hover.png);
+   
+}
+.product-slide .by-products .belt a{
+    background-image: url(slider-img/belt.png);
+   
+}
+.product-slide .by-products .belt:hover a{
+    background-image: url(slider-img/belt-hover.png);
+    
+}
+.product-slide .by-products .scarf a{
+    background-image: url(slider-img/scarf.png);
+    background-size: 50%;
+}
+.product-slide .by-products .scarf:hover a{
+    background-image: url(slider-img/scarf-hover.png);
+    background-size: 50%;
+}
+.product-slide .by-products article a h5{
+    margin-top: 135px;
+    color:#c10497;
+    font-weight: bold;
+}
+.product-slide .by-products article:hover a h5{
+    color:#454545;
+}
+.product-slide .by-products article:hover a{
+    text-decoration: none;
+}
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next{
+    width:30px;
+    height: 30px;
+    line-height: 25px;
+}
+.owl-carousel .owl-nav .owl-prev:before{
+    content: url(slider-img/arr-left.png);
+
+}
+.owl-carousel .owl-nav .owl-next:after{
+    content: url(slider-img/arr-right.png);
+
+}
+.owl-carousel .owl-nav [class*="owl-"] {
+    padding: 4px 12px;
+    background: #454545;
+    border-radius: 0;
+    margin:5px 1px;
+}
+.product-slide .by-products{
+   border:1px solid #d9d9d9;
+   padding: 10px;
+  background: -webkit-linear-gradient(left top, #f7f7f7, #ececec); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #f7f7f7, #ececec); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #f7f7f7, #ececec); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #f7f7f7, #ececec); /* Standard syntax */
 }
