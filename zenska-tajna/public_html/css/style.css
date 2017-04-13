@@ -439,14 +439,15 @@ header ul li a{
 }
 .style{
     border:1px solid #e6e6e6;
+    text-align: center;
 }
 .style div{
-    width: 44%;
-    float: left;
+    width: 45%;
+    display: inline-block;
+    text-align: left;
 }
 .style .left{
-    margin-right: 4%;
-    margin-left: 4%;
+    margin-left: 7%;
 }
 .style h6{
     color:#c10497;
