@@ -10,7 +10,6 @@
         top: -30px;
     }
     .header-bottom {
-        padding: 0;
         padding-right: 10px;
     }
 
@@ -82,7 +81,7 @@
     .product-price p{
         font-size: 35px;
     }
-    .footer-top{
+     .footer-top{
         padding: 15px;
     }
     .footer-top ul{
@@ -117,16 +116,15 @@
         left: -4px;
     }
     #acessories {
-        height: 365.5px;
-        margin-bottom: 10px;
-    }
-    .footer-bottom .btn{
+    height: 365.5px;
+    margin-bottom: 10px;
+}
+.footer-bottom .btn{
         margin-top: 0px;
     }
     .footer-bottom article div:nth-child(2){
         margin:20px 10px;
     }
-
 
 
 
