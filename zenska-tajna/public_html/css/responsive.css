@@ -106,14 +106,36 @@
         margin:0;
     }
     /*------------------  proizvodi.html style ------------------*/
-    .product-filter .by-products{
-        border-right:1px solid #d9d9d9;
-    }
     .filter form{
-        padding-right: 10px;
-        padding-top: 15px;
-        margin-left: -15px;
+        border-left:1px solid #d9d9d9;
+        padding: 15px 10px 30px;
     }
+    .sorting div,
+    .sorting ol{
+        float:left;
+
+    }
+    .sorting div{
+        position: relative;
+        top:5px;
+        padding-left: 0;
+
+    }
+    .sorting ul{
+        float:right;
+        position: relative;
+        top:5px;
+        padding-left: 0;
+    }
+   
+    .pages div:last-of-type{
+        position: absolute;
+        top:0;
+        right: 0;
+    }
+    
+
+
 
 
 
@@ -145,6 +167,27 @@
     .helper article a h6 {
         margin-top: 80px;
     }
+    .din >div{
+        padding: 0 0px 0 15px;
+    }
+    .din>div.search{
+        padding-right: 15px;
+        position: relative;
+        top: 17px;
+    }
+    .sorting div,
+    .sorting ul{
+        padding-left: 15px;
+    }
+    .pages div:nth-of-type(2){
+        position: absolute;
+        top:0;
+        left:25%;
+    }
+    .pages .pagination{
+        margin: 0;
+    }
+
 
 
 
@@ -169,6 +212,9 @@
     }
     .helper article a h6 {
         margin-top: 90px;
+    }
+    .filter form {
+        padding: 15px 10px 40px;
     }
 
 }
