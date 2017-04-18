@@ -81,7 +81,7 @@
     .product-price p{
         font-size: 35px;
     }
-     .footer-top{
+    .footer-top{
         padding: 15px;
     }
     .footer-top ul{
@@ -105,8 +105,17 @@
     .footer-bottom article div:nth-child(2){
         margin:0;
     }
-    
-   
+    /*------------------  proizvodi.html style ------------------*/
+    .product-filter .by-products{
+        border-right:1px solid #d9d9d9;
+    }
+    .filter form{
+        padding-right: 10px;
+        padding-top: 15px;
+        margin-left: -15px;
+    }
+
+
 
 
 
@@ -118,14 +127,23 @@
         left: -4px;
     }
     #acessories {
-    height: 365.5px;
-    margin-bottom: 10px;
-}
-.footer-bottom .btn{
+        height: 365.5px;
+        margin-bottom: 10px;
+    }
+    .footer-bottom .btn{
         margin-top: 0px;
     }
     .footer-bottom article div:nth-child(2){
         margin:20px 10px;
+    }
+    .helper article a {
+        background-position: center 10px;
+    }
+    .helper article {
+        height: 102px;
+    }
+    .helper article a h6 {
+        margin-top: 80px;
     }
 
 
@@ -145,6 +163,12 @@
     .navbar-default .navbar-collapse, .navbar-default .navbar-form{
         width: 100.9%;
         left: -5px;
+    }
+    .helper article {
+        height: 130px;
+    }
+    .helper article a h6 {
+        margin-top: 90px;
     }
 
 }
