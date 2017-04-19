@@ -177,7 +177,7 @@ $(document).ready(function () {
                     items: 5
                 },
                 768: {
-                    items: 4
+                    items: 3
                 },
                 992: {
                     items: 5

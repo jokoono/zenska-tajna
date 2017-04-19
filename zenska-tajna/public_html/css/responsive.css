@@ -108,32 +108,38 @@
     /*------------------  proizvodi.html style ------------------*/
     .filter form{
         border-left:1px solid #d9d9d9;
-        padding: 15px 10px 30px;
+        padding: 15px 10px 15px;
     }
     .sorting div,
     .sorting ol{
         float:left;
-
     }
     .sorting div{
         position: relative;
-        top:5px;
-        padding-left: 0;
-
+        top:7px;
     }
     .sorting ul{
         float:right;
         position: relative;
-        top:5px;
+        top:7px;
         padding-left: 0;
+        padding-right: 10px;
     }
-   
+    .pages{
+        padding: 15px 5px;
+    }
+    .pages div:nth-of-type(2){
+        text-align: center;
+    }
+    .pages div:first-of-type{
+        margin-top: 5px;
+    }
     .pages div:last-of-type{
         position: absolute;
-        top:0;
+        top:12px;
         right: 0;
     }
-    
+
 
 
 
@@ -167,26 +173,17 @@
     .helper article a h6 {
         margin-top: 80px;
     }
-    .din >div{
-        padding: 0 0px 0 15px;
-    }
-    .din>div.search{
-        padding-right: 15px;
-        position: relative;
-        top: 17px;
-    }
+
     .sorting div,
     .sorting ul{
         padding-left: 15px;
     }
     .pages div:nth-of-type(2){
         position: absolute;
-        top:0;
+        top:10px;
         left:25%;
     }
-    .pages .pagination{
-        margin: 0;
-    }
+   
 
 
 
@@ -215,6 +212,9 @@
     }
     .filter form {
         padding: 15px 10px 40px;
+    }
+    .pages div:nth-of-type(2){
+        left:30%;
     }
 
 }
