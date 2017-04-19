@@ -139,6 +139,14 @@
         top:12px;
         right: 0;
     }
+    .articles .artical2 article {
+        min-width: 170px;
+        height: auto;
+        margin-bottom: 25px;
+    }
+    .articles .artical2 article img{
+        width: 100%;
+    }
 
 
 
@@ -183,7 +191,21 @@
         top:10px;
         left:25%;
     }
-   
+    .articles .artical2 article {
+        min-width: 200px;
+        height: auto;
+
+    }
+    .articles .artical3 h6 {
+        font-size: 14px;
+    }
+    .articles .artical3 p {
+        font-size: 12px;
+    }
+    .articles .artical3 article div {
+        padding-left: 60px;
+    }
+
 
 
 
