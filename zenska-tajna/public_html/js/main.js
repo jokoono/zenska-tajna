@@ -196,5 +196,35 @@ $(document).ready(function () {
             gallery_height:760
         });
     }
- 
+    
+    $('.articals').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            nav: true,
+            navText: ["",""],
+            rewindNav:true,
+            dots: false,
+           
+           
+            responsive: {
+                0: {
+                    items: 3
+                },
+                480: {
+                    items: 4
+                },
+                768: {
+                    items: 5
+                },
+                992: {
+                    items: 6
+                   
+                }
+            }
+        });
+  
+    
+    
+   
 });

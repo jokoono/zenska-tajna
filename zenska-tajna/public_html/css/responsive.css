@@ -69,6 +69,10 @@
         height: 60px;
         margin: 7.5px 5px;
     }
+    .accessories-slide .pattern {
+        width: 90.5%;
+
+    }
     .product-price{
         margin-bottom: 0px;
         top:0;
@@ -166,6 +170,10 @@
         height: 365.5px;
         margin-bottom: 10px;
     }
+    .accessories-slide .pattern {
+        width: 92.7%;
+    }
+
     .footer-bottom .btn{
         margin-top: 0px;
     }
@@ -205,6 +213,9 @@
     .articles .artical3 article div {
         padding-left: 60px;
     }
+    .shop select{
+        background-position: right 1px;
+    }
 
 
 
@@ -226,14 +237,14 @@
         width: 100.9%;
         left: -5px;
     }
+    .accessories-slide .pattern {
+        width: 94%;
+    }
     .helper article {
         height: 130px;
     }
     .helper article a h6 {
         margin-top: 90px;
-    }
-    .filter form {
-        padding: 15px 10px 40px;
     }
     .pages div:nth-of-type(2){
         left:30%;
