@@ -151,11 +151,15 @@
     .articles .artical2 article img{
         width: 100%;
     }
-
-
-
-
-
+    .shop ul{
+        margin-left: -10px;
+    }
+    .social-icon{
+        display: inline-block;
+    }
+    .social-icon li:first-child{
+        display: inline-block;
+    }
 
 
 
@@ -215,6 +219,12 @@
     }
     .shop select{
         background-position: right 1px;
+    }
+    .shop .btn:first-of-type{
+        margin-left: 10px;
+    }
+    .shop ul{
+        margin-left: 0px;
     }
 
 

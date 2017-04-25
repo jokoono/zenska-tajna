@@ -1062,9 +1062,13 @@ hr:last-of-type{
     background-color: #c10497;
     border-radius: 10px;
     border-color:#c10497;
-    margin-left: 10px;
     height: 40px;
     padding: 8px 12px;
+}
+.shop .btn img{
+    margin-right: 5px;
+    position: relative;
+    bottom: 2px;
 }
 .shop .form-group{
     margin-top: 20px;
@@ -1087,6 +1091,91 @@ hr:last-of-type{
     height: 20px;
     border:1px solid #d1d1d1;
 }
+.shop ul li{
+    margin-bottom: 7px;
+}
+.shop ul li a{
+    font-weight: normal;
+    font-size: 12px;
+}
+.shop ul li a img{
+    margin-right: 7px;
+}
 .shop .text p{
     font-size: 12px;
+}
+.shop .like{
+    border:1px solid #cad4e7;
+    padding: 0px 5px;
+    border-radius: 4px;
+    background: #eceef5;
+    color:#3b5998;
+    margin-top: 15px;
+    display: inline-block;
+    font-weight: normal;
+    height: 22px;
+    margin-right: 4px;
+}
+.shop .like .fa{
+    background: #fff;
+}
+
+.shop .bubble{
+    margin-top: 15px;
+    color:#454545;
+    font-weight: normal;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    padding: 0px;
+    background: #efefef;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border: #c1c1c1 solid 1px;
+    margin-right: 25px;
+}
+
+.shop .bubble:after{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 3px 6px 3px 0;
+    border-color: transparent #efefef;
+    display: block;
+    width: 0;
+    z-index: 1;
+    left: -5px;
+    top: 9px;
+    transform: rotate(-25deg);
+}
+
+.shop .bubble:before{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 3px 6px 3px 0;
+    border-color: transparent #c1c1c1;
+    display: block;
+    width: 0;
+    z-index: 0;
+    left: -6px;
+    top: 9px;
+    transform: rotate(-25deg);
+}
+.social-icon{
+    display: block;
+    position: relative;
+    top:7px;
+    font-weight: bold;
+    color: #454545;
+}
+.social-icon li{
+    padding: 0;
+}
+.social-icon li:first-child{
+    margin-right: 7px;
+    position: relative;
+    top:2px;
+    display: block;
 }
