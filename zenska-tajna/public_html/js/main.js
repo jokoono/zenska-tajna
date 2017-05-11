@@ -71,18 +71,17 @@ $(document).ready(function () {
         });
     }
 
-      if ($('.owl-carousel').length > 0) {
+    if ($('.owl-carousel').length > 0) {
 
         $('.products').owlCarousel({
             loop: true,
             margin: 10,
             responsiveClass: true,
             nav: true,
-            navText: ["",""],
-            rewindNav:true,
+            navText: ["", ""],
+            rewindNav: true,
             dots: false,
-           
-           
+
             responsive: {
                 0: {
                     items: 1
@@ -92,143 +91,140 @@ $(document).ready(function () {
                 },
                 768: {
                     items: 3
-                   
+
                 },
-                
+
                 992: {
                     items: 4
-                   
+
                 }
             }
         });
     }
-     
 
-        $('.trend').owlCarousel({
-            loop: true,
-            margin: 10,
-            responsiveClass: true,
-            nav: true,
-            navText: ["",""],
-            rewindNav:true,
-            dots: false,
-           
+
+    $('.trend').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        nav: true,
+        navText: ["", ""],
+        rewindNav: true,
+        dots: false,
+
         responsive: {
-                0: {
-                    items: 1
-                },
-                480: {
-                    items: 2
-                },
-                768: {
-                    items: 3
-                   
-                }
-                
+            0: {
+                items: 1
+            },
+            480: {
+                items: 2
+            },
+            768: {
+                items: 3
+
             }
-        });
-          $('.trends').owlCarousel({
-            loop: true,
-            margin: 10,
-            responsiveClass: true,
-            nav: true,
-            navText: ["",""],
-            rewindNav:true,
-            dots: false,
-           
+
+        }
+    });
+    $('.trends').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        nav: true,
+        navText: ["", ""],
+        rewindNav: true,
+        dots: false,
+
         responsive: {
-                0: {
-                    items: 3
-                },
-                480: {
-                    items: 4
-                },
-                768: {
-                    items: 5
-                   
-                },
-                992: {
-                    items: 6
-                   
-                }
-                
+            0: {
+                items: 3
+            },
+            480: {
+                items: 4
+            },
+            768: {
+                items: 5
+
+            },
+            992: {
+                items: 6
+
             }
-        });
-        $('.by-products').owlCarousel({
-            loop: true,
-            margin: 10,
-            responsiveClass: true,
-            nav: true,
-            navText: ["",""],
-            rewindNav:true,
-            dots: false,
-           
+
+        }
+    });
+    $('.by-products').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        nav: true,
+        navText: ["", ""],
+        rewindNav: true,
+        dots: false,
+
         responsive: {
-                0: {
-                    items: 2
-                },
-                 390: {
-                    items: 3
-                },
-                500: {
-                    items: 4
-                },
-                600: {
-                    items: 5
-                },
-                768: {
-                    items: 3
-                },
-                992: {
-                    items: 5
-                },
-                1200: {
-                    items: 6
-                   
-                }
+            0: {
+                items: 2
+            },
+            390: {
+                items: 3
+            },
+            500: {
+                items: 4
+            },
+            600: {
+                items: 5
+            },
+            768: {
+                items: 3
+            },
+            992: {
+                items: 5
+            },
+            1200: {
+                items: 6
+
             }
-        });
- 
+        }
+    });
+
     //CALL PLUGIN FOR VIDEO GALLERY ON HOMEPAGE
-    if($('#video-gallery').length>0){
+    if ($('#video-gallery').length > 0) {
         $("#video-gallery").unitegallery({
-            
-            gallery_height:760
+
+            gallery_height: 760
         });
     }
-    
+
     $('.articals').owlCarousel({
-            loop: true,
-            margin: 10,
-            responsiveClass: true,
-            nav: true,
-            navText: ["",""],
-            rewindNav:true,
-            dots: false,
-           
-           
-            responsive: {
-                0: {
-                    items: 3
-                },
-                480: {
-                    items: 4
-                },
-                768: {
-                    items: 5
-                },
-                992: {
-                    items: 6
-                   
-                }
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        nav: true,
+        navText: ["", ""],
+        rewindNav: true,
+        dots: false,
+
+        responsive: {
+            0: {
+                items: 3
+            },
+            480: {
+                items: 4
+            },
+            768: {
+                items: 5
+            },
+            992: {
+                items: 6
+
             }
-        });
-  
-  
+        }
+    });
 
 
-    
-    
-    
-   
+
+
+
+
 });

@@ -160,6 +160,18 @@
     .social-icon li:first-child{
         display: inline-block;
     }
+    .header-bottom .modal-body .col-sm-6{
+    min-height: 235px;
+    position: relative;
+}
+.header-bottom .modal-body .register{
+    position: absolute;
+    left: 35%;
+    bottom: 0px;
+}
+    .modal-dialog {
+    width: 100%;
+    }
 
 
 
@@ -226,8 +238,7 @@
     .shop ul{
         margin-left: 0px;
     }
-
-
+    
 
 
 
