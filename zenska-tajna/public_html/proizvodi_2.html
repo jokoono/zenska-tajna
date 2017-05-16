@@ -31,12 +31,12 @@
             <div class="container">
                 <ul class="list-inline">
                     <li>
-                        <a href="#">
+                        <a href="#" data-toggle="modal" data-target="#demo-1">
                             <img src="img/icons/bag.png" alt=""/>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#"  data-toggle="modal" data-target="#demo-2">
                             <img src="img/icons/pencil.png" alt=""/>
                         </a></li>
                 </ul>
@@ -77,8 +77,7 @@
                                     <h5>Vaša korpa</h5>
                                     <p>Proizvoda: 2</p>
                                     <p>Ukupna cena: 3500,00 din</p>
-                                    <a href="#"><p>Naruči <span class='fa fa-angle-double-right'></span></p></a>
-                                </div>
+                                    <a href="#" data-toggle="modal" data-target="#cartModal" ><p>Naruči <span class='fa fa-angle-double-right'></span></p></a>                                </div>
                             </div>
                         </div>
                     </div>
@@ -821,6 +820,495 @@
 
 
 
+        <!-- [ Modal #1 ] -->
+        <div class="modal user-action fade" id="demo-1" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal"><i class="icon-xs-o-md"></i></button>
+
+                    <div class="modal-body">
+                        <div class="clearfix">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 text-center">
+                                <h4 class="modal-title caps"><strong>Prijavite se</strong></h4>
+                                <p><i>Molimo Vas unesite email i lozinku kako bi se prijavili</i></p>
+
+                                <form action="" method="get"  data-toggle="validator" role="form">
+                                    <div class="form-group">
+                                        <input type="email" name="email" value="" class="form-control" placeholder="Email" required/>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="password" value="" class="form-control" placeholder="Lozinka" required />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <a href="" class="pull-left" data-toggle="modal" data-target="#demo-3" data-dismiss="modal">Zaboravili ste lozinku?</a>
+                                        <label class="pull-right">
+                                            <input type="checkbox" name="remmember"> Zapamti me
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-default"><strong>Prijavi se</strong></button>
+                                        <button type="submit" class="btn btn-default"><strong>Facebook prijava</strong></button>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="col-sm-6 text-center">
+                                <h4 class="modal-title caps"><strong>Otvorite nalog</strong></h4>
+
+                                <p><i>Kreirajte svoj korisnički nalog</i></p>
+                                <div class="form-group register">
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#demo-2" data-dismiss="modal"><strong>Kreiraj nalog</strong></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- [ Modal #2 ] -->
+        <div class="modal user-action fade" id="demo-2" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal"><i class="icon-xs-o-md"></i></button>
+
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="row">
+                            <div class="col-sm-6 col-sm-offset-3 text-center">
+                                <h4 class="modal-title caps"><strong>Otvorite nalog</strong></h4>
+
+                                <p><i>Popunite obrazac i otvorite korisnički račun. Molimo Vas da Vašu lozinku čuvate u tajnosti. Potrebno je popuniti sva polja.</i></p>
+                                <form action="" method="get"  data-toggle="validator" role="form">
+                                    <div class="form-group">
+                                        <input type="text" name="name"  pattern="^[_A-z0-9]{1,}$" maxlength="15"  data-minlenght="3" class="form-control" required placeholder="Email" />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text"  name="lastname" class="form-control" required placeholder="Lozinka" />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="form-control" required placeholder="Email" />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" id="password" name="password" required class="form-control" placeholder="Lozinka" />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="re-password" data-match="#password" required class="form-control" placeholder="Email" />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group notes">
+                                        <label>
+                                            <input type="checkbox" name="remmember" required=""> Želim da primam obaveštenja o akcijama i uslugama
+                                        </label>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <p><sup>*</sup>Upoznat/a sam sa uslovima kupovine Supermarket prodavnice i prihvatam ih.</p>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-default"><strong>Kreiraj nalog</strong></button>
+                                        <button type="submit" class="btn btn-default"><strong>Facebook kreiraj</strong></button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- [ Modal #3 ] -->
+        <div class="modal user-action fade" id="demo-3" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <button type="button" class="close" data-dismiss="modal"><i class="icon-xs-o-md"></i></button>
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-sm-6 text-center">
+                                <h4 class="modal-title caps"><strong>Zaboravljena lozinka</strong></h4>
+
+                                <p><i>Unesite vasu email adresu a mi cemo vam SKUVATI novu lozinku</i></p>
+                                <form action="" method="get" data-toggle="validator" role="form">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email"  required />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="input-group-btn"><button class="btn btn-default" type="button">Potvrdi</button></span>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div class="col-sm-6 text-center">
+                                <h4 class="modal-title caps"><strong>Otvorite nalog</strong></h4>
+
+                                <p><i>Kreirajte svoj korisnički nalog</i></p>
+                                <div class="form-group register">
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#demo-2" data-dismiss="modal"><strong>Kreiraj nalog</strong></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="modal small-cart fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModal">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header clearfix text-center">
+                        <a href="#" class="pull-left link-shadow">Isprazni korpu   <span class="fa fa-angle-double-right"></span></a>
+                        <h4>Korpa</h4>
+                        <a href="#" class="pull-right link-shadow">Isprazni korpu   <span class="fa fa-angle-double-right"></span></a>
+                    </div>
+                    <div class="modal-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Slika</th>
+                                        <th>Opis</th>
+                                        <th>Cena</th>
+                                        <th>Kolicina</th>
+                                        <th colspan="2">Ukupno</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <figure>
+                                                    <img class="img-responsive" src="img/bracelet-slide.jpg" alt=""/>
+                                                </figure>
+
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <h5><b>Torba Sysley</b></h5>
+                                            <p>Sifra: <span>435363636</span></p>
+                                            <p>Brend <span>Sysley</span></p>
+                                        </td>
+                                        <td>
+                                            <p>3200,00</p>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="quantity" value="1">
+
+                                        </td>
+                                        <td>
+                                            <p>3200,00</p>
+                                        </td>
+                                        <td><a href="#" class="remove">x</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <figure>
+                                                    <img class="img-responsive" src="img/bracelet-slide.jpg" alt=""/>
+                                                </figure>
+
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <h5><b>Torba Sysley</b></h5>
+                                            <p>Sifra: <span>435363636</span></p>
+                                            <p>Brend <span>Sysley</span></p>
+                                        </td>
+                                        <td>
+                                            <p>3200,00</p>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="quantity" value="1">
+
+                                        </td>
+                                        <td>
+                                            <p>3200,00</p>
+                                        </td>
+                                        <td><a href="#" class="remove">x</a></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="4" rowspan="3" >
+                                            <p style="max-width: 300px;">Nakon poručivanja naš operater će Vas pozvati radi verifikacije porudžbine, radnim danom od 08:00 do 16:00</p>
+                                        </td>
+                                        <td>Vrednost:</td>
+                                        <td>4800,00 dinara</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>Dostava:</td>
+                                        <td>250,00 dinara</td>
+                                    </tr>
+                                    <tr>
+                                        <td >Ukupno</td>
+                                        <td >5234,00 dinara</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-default link-shadow" data-dismiss="modal" data-toggle="modal" data-target="#checkout">Naruci  <span class="fa fa-angle-double-right"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--CHECKOUT 1. step-->
+
+
+        <div class="modal fade" id="checkout" tabindex="-1" role="dialog" aria-labelledby="checkout">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <a href='#' class='text-uppercase'>
+                            <img class='logo' src="img/logo.png" alt=""/>
+                        </a>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Informacije o kupcu</h3>
+                        <div class="user-info">
+                            <figure>
+                                <img src="img/user.jpg" alt="">
+                            </figure>
+                            <div>
+                                <p>Marko Markovic (<span><a href="mailto:markomarkovic@mail.com">markomarkovic@mail.com</a></span>)</p>
+                                <p><a href="#">Odjava</a></p>
+                            </div>
+                        </div>
+                        <h4>Adresa za dostavu</h4>
+                        <form action="" method="get" data-toggle="validator" role="form">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" placeholder="Ime"  required />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" name="lastname" class="form-control" placeholder="Prezime"  required />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" name="company" class="form-control" placeholder="Kompanija (opciono)"  />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" name="address" class="form-control" placeholder="Adresa" required />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" name="city" class="form-control" placeholder="Grad" required />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <select required name="country" class="form-control">
+                                            <option value="">--</option>
+                                            <option value="1">Beograd</option>
+                                            <option value="2">Novi Sad</option>
+                                            <option value="3">Nis</option>
+                                            <option value="4">Kragujevac</option>
+                                        </select>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Postanski broj"  required />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" name="phone" class="form-control" placeholder="Telefon" required />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="clearfix checkout-action">
+                                <a class="pull-left" href="#" data-dismiss="modal" data-toggle="modal" data-target="#cartModal" > &lang; Nazad na korpu </a>
+                                <a class="pull-right link-shadow" href="#" data-dismiss="modal" data-toggle="modal" data-target="#delivery" > Dalje na nacin dostave &rang; </a>
+                            </div>
+                        </form>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--DELIVERY MODAL-->
+        <div class="modal fade" id="delivery" tabindex="-1" role="dialog" aria-labelledby="delivery">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <a href='#' class='text-uppercase'>
+                            <img class='logo' src="img/logo.png" alt=""/>
+                        </a>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Nacin placanja</h4>
+                        <p>Sve transakcije su sigurne i sifrovane. Podaci o karticama se ne cuvaju</p>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Placanje pouzecem</div>
+                            <div class="panel-body text-center">
+                                Prikazani iznos dostave je okviran, a bice naplacen od strane PostExpresa-a po
+                                njihovom vazecem cenovniku
+                            </div>
+                        </div>
+                        <form method="get" action="">
+                            <div class="radio">
+                                <label class="form-control active">
+                                    <input type="radio" name="deliveryAddress"  value="option1" checked>
+                                    Ista kao adresa za dostavu
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label class="form-control">
+                                    <input type="radio" name="deliveryAddress"  value="option2">
+                                    Koristi drugu adresu za racun
+
+                                    <div class="mt">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input type="text" name="name" class="form-control" placeholder="Ime"  required />
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input type="text" name="lastname" class="form-control" placeholder="Prezime"  required />
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <input type="text" name="company" class="form-control" placeholder="Kompanija (opciono)"  />
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <input type="text" name="address" class="form-control" placeholder="Adresa" required />
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <input type="text" name="city" class="form-control" placeholder="Grad" required />
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <select required name="country" class="form-control">
+                                                        <option value="">--</option>
+                                                        <option value="1">Beograd</option>
+                                                        <option value="2">Novi Sad</option>
+                                                        <option value="3">Nis</option>
+                                                        <option value="4">Kragujevac</option>
+                                                    </select>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Postanski broj"  required />
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <input type="text" name="phone" class="form-control" placeholder="Telefon" required />
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </label>
+
+                            </div>
+
+                            <div class="clearfix checkout-action">
+                                <a class="pull-left" href="#" data-dismiss="modal" data-toggle="modal" data-target="#checkout" > &lang; Nazad na nacin dostave </a>
+                                <a class="pull-right link-shadow" href="#" data-dismiss="modal"  > Pregled porudzbine </a>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
 
 
 
@@ -833,6 +1321,7 @@
         <script src="js/owl.carousel.min.js" type="text/javascript"></script>
         <script src="js/video-gallery.js" type="text/javascript"></script>
         <script src="js/video-default.js" type="text/javascript"></script>
+        <script src="js/validator.js" type="text/javascript"></script>
         <script src="js/main.js" type="text/javascript"></script>
     </body>
 </html>

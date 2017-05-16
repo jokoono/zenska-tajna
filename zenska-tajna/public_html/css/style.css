@@ -824,14 +824,7 @@ footer{
     border-radius: 0;
 }
 select.form-control {
-    -webkit-appearance:none;
-    -moz-appearance:none;
-    -ms-appearance:none;
-    appearance:none;
-    background-image:  url('style-img/select-button.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right center;
+    
     color:#000;
     box-shadow: none;
 }
@@ -1180,29 +1173,135 @@ hr:last-of-type{
     display: block;
 }
 
-.header-bottom .modal-body .form-group input{
+ .user-action .modal-body .form-group input{
     background: black;
     border-radius: 0;
     height: 30px;
     margin-bottom: 10px;
 }
-.header-bottom .modal-body .form-group input[type=checkbox]{
+ .user-action .modal-body .form-group input[type=checkbox]{
     height: auto;
 }
-.header-bottom .modal-body p:first-of-type{
+ .user-action .modal-body p:first-of-type{
     color:#000;
     font-size: 11px;
     margin-bottom: 15px;
 }
-.header-bottom .modal-body a:first-of-type{
+ .user-action .modal-body a:first-of-type{
     color:#000;
     margin-top: 6px;
 }
 
-.modal-body .btn-default{
+.user-action .modal-body .btn-default{
     border-radius: 0;
     border-color: #000;
 }
-.modal-body .notes{
+.user-action .modal-body .notes{
     margin-bottom: -10px;
 }
+
+.user-action .modal-header{
+    border-bottom: none;
+}
+
+.user-action{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.small-cart thead{
+    background: gray;
+}
+.small-cart .modal-header h4{
+    display: inline-block;
+}
+
+.small-cart td figure{
+    max-width: 100px;
+}
+.small-cart p{
+    margin-bottom: 0;
+}
+
+.small-cart a.remove{
+    color:#c6049b;
+}
+
+.small-cart tbody{
+    border-bottom: 4px solid gray;
+}
+
+.small-cart .modal-header a{
+    display: inline-block;
+    border-radius: 5px ;
+    color:#c10497;
+    background: #eee;
+    border: 1px solid gray;
+    padding: 5px 10px;
+}
+
+
+.small-cart .modal-footer button.btn-default{
+    background: #d304a5; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#d304a5, #bc0493); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#d304a5, #bc0493); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#d304a5, #bc0493); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#d304a5, #bc0493); /* Standard syntax */
+    color:#fff;
+    border-color: #ce04a1;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#checkout .user-info > *{
+    display: inline-block;
+}
+#checkout .user-info > figure{
+    max-width: 70px;
+}
+#checkout .user-info > figure img{
+    max-width: 100%;
+}
+#checkout .user-info a{
+    color:#ccc;
+}
+
+.checkout-action a{
+    color:#ccc;
+}
+.checkout-action a:last-of-type{
+    display: inline-block;
+    padding: 5px 10px;
+    background: #d304a5; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#d304a5, #bc0493); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#d304a5, #bc0493); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#d304a5, #bc0493); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#d304a5, #bc0493); /* Standard syntax */
+    color:#fff;
+    border-color: #ce04a1;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#delivery .radio label input~div{
+    display: none;
+}
+#delivery .radio label input:checked~div{
+    display: block;
+}
+
+
+#delivery .radio label {
+    padding-left: 30px;
+   
+}
+
+
+.mt{
+    margin-top: 20px;
+}
+
+
+
